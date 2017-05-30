@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Walk-a-thon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="table-container" class="container col-md-6 col-sm-12">
+		<table id="table-of-donors">
+			<tr class="row table-heading-row">
+				<td class="col-xs-3">Name</td>
+				<td class="col-xs-3">E-Mail</td>
+				<td class="col-xs-2">Donation</td>
+				<td class="col-xs-4">Donation Type</td>
+			</tr>	
+		</table>
+	</div>
+	<div id="form-container" class="container col-md-6 col-sm-12">
+		<form id="walkAThon">
+			<pre>
+	Name:     <input type="text" id="nameInput" class="inputBox" name="name" required><br>
+	E-mail:   <input type="email" id="emailInput" class="inputBox" name="email" required><br>
+	Donation: <input type="number" id="donationInput" class="inputBox" name="donation" required><br>
+	<input type="radio" id="singleDonBtn" name="donationType" value="Single" checked>Single Donation<input type="radio"  id="perLapDonBtn" name="donationType" value="Per Lap">Per Lap
+			</pre>
+		</form>
+		<button type="button" id="donate" form="walkAThon">Donate</button>
+		<button type="reset" id="cancel" form="walkAThon">Cancel</button>
+	</div>
+	<script type="text/javascript" src="javascripts/donorInfo.js"></script>
+	<script type="text/javascript" src="javascripts/main.js"></script>
+</body>
+</html>
